@@ -4,7 +4,7 @@ class DropdownClass extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {options : props.noneValue ? [props.noneValue, ...props.options] : props.options[0],
+        this.state = {options : props.noneValue ? [props.noneValue, ...props.options] : props.options,
                       selected : props.placeholderText ? props.placeholderText : props.options[0],
                       onChange : props.onChange ? props.onChange : () => {},
                       opened : false}
